@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario - Ejercicio Guiado</title>
+    </head>
+    <body>
+      <center>
+      <form>
+      <fieldset>
+        <h1>Formulario de Datos</h1>
+        <p>
+        <label>Nombre</label><br>
+        <input id="campo1" name="nombre" type="text" /><br>
+        </p>
+        <p>
+        <label>Apellidos</label><br>
+        <input id="campo2" name="apellido" type="text" /><br>
+        </p>
+        <p>
+        <label for="telefono">Teléfono</label><br>
+        <input id="campo3" type="tel" name="telefono" pattern="[0-9]{9}" title="Introduce tu teléfono con los 9 dígitos" required>
+        </p>
+        <p>
+        <b>
+        <label>Escoge tu carro para poder continuar</label><br></b>
+        <select>
+            <option selected value="0"> Elige tu carro</option>
+            <option value='1'>Volvo</option>
+            <option value='2'>Saab</option>
+            <option value='3'>Mercedes</option>
+            <option value='4'>Audi</option>
+        </select>
+        </p>
+        <label for="email">Email</label><br>
+        <input id="campo5" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Ingresa tu email en el siguiente orden: caracteres@caracteres.dominio" required>
+        </p>
+        <p>
+        <label for="pw">Contraseña</label><br>
+        <input id="campo6" type="password" name="pw" pattern=".{6,}" title="6 o más carácteres" required>
+        </p>
+        <input id="campo7" name="enviar" type="submit" value="Enviar"/>
+      </fieldset>
+      </form>
+    </center>
+    </body>
+  </html>
